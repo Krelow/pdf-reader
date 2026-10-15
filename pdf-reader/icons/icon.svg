@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E53935"/>
+      <stop offset="100%" stop-color="#B71C1C"/>
+    </linearGradient>
+    <linearGradient id="pageGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#F5F5F5"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="16" stdDeviation="18" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Background rounded rect -->
+  <rect width="512" height="512" rx="110" fill="url(#bgGrad)"/>
+
+  <!-- Document Sheet -->
+  <g filter="url(#shadow)">
+    <!-- Main page -->
+    <path d="M148 96 H316 L384 164 V408 C384 414.6 378.6 420 372 420 H148 C141.4 420 136 414.6 136 408 V108 C136 101.4 141.4 96 148 96 Z" fill="url(#pageGrad)"/>
+    <!-- Folded corner -->
+    <path d="M316 96 V164 H384 Z" fill="#E0E0E0"/>
+    <path d="M316 164 H384 L316 96 Z" fill="#BDBDBD" opacity="0.3"/>
+  </g>
+
+  <!-- PDF Badge / Text lines -->
+  <g fill="#E53935">
+    <rect x="180" y="210" width="160" height="18" rx="9" fill="#E53935" opacity="0.9"/>
+    <rect x="180" y="246" width="130" height="14" rx="7" fill="#9E9E9E" opacity="0.6"/>
+    <rect x="180" y="274" width="150" height="14" rx="7" fill="#9E9E9E" opacity="0.6"/>
+    <rect x="180" y="302" width="110" height="14" rx="7" fill="#9E9E9E" opacity="0.6"/>
+  </g>
+
+  <!-- Badge banner with 'PDF' -->
+  <rect x="160" y="340" width="192" height="48" rx="12" fill="#D32F2F"/>
+  <text x="256" y="374" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="28" font-weight="900" fill="#FFFFFF" text-anchor="middle" letter-spacing="3">PDF</text>
+</svg>

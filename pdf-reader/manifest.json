@@ -1,0 +1,20 @@
+{
+  "name": "Lettore PDF Libero",
+  "short_name": "Lettore PDF",
+  "description": "Lettore PDF 100% gratuito, senza pubblicità, leggero e sicuro per Android",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#121212",
+  "theme_color": "#D32F2F",
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "icons/icon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["utilities", "productivity", "books"]
+}
